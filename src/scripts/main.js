@@ -25,6 +25,6 @@ const contaHoras = setInterval(function () {
   if (intervaloAteEvento < 0) {
     clearInterval(contaHoras);
 
-    document.getElementById("contador").innerHTML = `Evento expirado`;
+    document.getElementById("contador").innerHTML = `Já acabou!`;
   }
 }, 1000);

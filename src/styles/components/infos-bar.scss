@@ -1,0 +1,36 @@
+@use "../variables";
+
+.infos-bar {
+  margin: 0 auto;
+  padding: 16px 24px;
+  background-color: variables.$textColor;
+  display: block;
+  width: 80%;
+  text-align: center;
+  font-family: "Oxanium", cursive;
+  -webkit-box-shadow: 0px 0px 16px 5px rgb(223, 184, 214);
+  -moz-box-shadow: 0px 0px 16px 5px rgba(223, 184, 214);
+  box-shadow: 0px 0px 16px 5px rgba(223, 184, 214);
+
+  &__infos {
+    display: block;
+    gap: 40px;
+
+    &__item {
+      font-size: 14px;
+      color: variables.$secondaryTextColor;
+      margin: 10px;
+      align-items: center;
+
+      b {
+        color: variables.$secondaryTextColor;
+        font-size: 18px;
+        display: block;
+
+        @media (max-width: 640px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
